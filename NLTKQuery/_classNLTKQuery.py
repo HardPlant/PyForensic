@@ -33,12 +33,13 @@ class classNTLKQuery:
             self.tokens = nltk.word_tokenize(self.rawText)
             self.TextCorpus = nltk.Text(self.tokens)
 
-        except:
-            return "말뭉치 작성 실패"
+        except Exception  as e:
+            print "예외가 발생했습니다."
+            print e
+            return False
 
         self.ActiveTextCorpus = True
-
-        return "성공"
+        return True
 
     def printCorpusLength(self):
         print "말뭉치 텍스트 길이:"
@@ -74,7 +75,7 @@ class classNTLKQuery:
     def generateConcordance(self):
         myWord = raw_input("일치하는 단어 입력:")
         if myWord:
-            self.TextCorpus.concordance()
+            self.TextCorpus.concordance(myWord)
         else:
             print "단어 입력이 잘못되었습니다."
 
@@ -89,7 +90,7 @@ class classNTLKQuery:
         myWord = raw_input("어떤 단어를 찾을까요?")
         if myWord:
             wordIndex = self.TextCorpus.index(myWord)
-            print "첫 번째 :" + myWord + "오프셋: "
+            print "첫 번째 " + myWord + " 오프셋: "
             print wordIndex
         else:
             print "단어 입력이 잘못되었습니다."

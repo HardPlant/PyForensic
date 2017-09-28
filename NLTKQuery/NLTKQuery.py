@@ -18,10 +18,10 @@ userSpecifiedPath = raw_input("경로 : ")
 
 result = oNLTK.textCorpusInit(userSpecifiedPath)
 
-if result == "성공":
+if result:
     menuSelection = -1
 
-    while menuSelection != -1:
+    while menuSelection != 0:
         print
         s = raw_input('Enter키를 누르세요.')
 
@@ -67,7 +67,8 @@ if result == "성공":
         else:
             print "오류가 발생했습니다."
             menuSelection = 0
-    else:
+
+else:
         print "NLTK 쿼리를 종료합니다."
 
 
