@@ -10,3 +10,8 @@ print type(newCorpus)
 print newCorpus.fileids()
 print newCorpus.abspaths()
 
+rawText = newCorpus.raw()
+print len(rawText)
+
+
+
