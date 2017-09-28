@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 #
-# NLTK Query 클래스 모듈
+# NLTK Query Support Method
 #
 #
 #
 
-import os
+def printMenu():
+    pass
+
+def getUserSelection():
+    pass
