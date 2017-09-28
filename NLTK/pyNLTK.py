@@ -20,3 +20,6 @@ print len(tokens)
 print tokens[0:100]
 
 textSimpson = nltk.Text(tokens)
+
+vocabularyUsed = set(textSimpson)
+print len(vocabularyUsed)
