@@ -7,3 +7,5 @@ rootOfCorpus = 'e://simpson//'
 newCorpus = PlaintextCorpusReader(rootOfCorpus, '.*')
 print type(newCorpus)
 
+print newCorpus.fileids()
+
