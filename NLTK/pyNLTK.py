@@ -18,3 +18,5 @@ print len(rawText)
 tokens = nltk.word_tokenize(rawText)
 print len(tokens)
 print tokens[0:100]
+
+textSimpson = nltk.Text(tokens)
