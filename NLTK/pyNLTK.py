@@ -8,4 +8,5 @@ newCorpus = PlaintextCorpusReader(rootOfCorpus, '.*')
 print type(newCorpus)
 
 print newCorpus.fileids()
+print newCorpus.abspaths()
 
