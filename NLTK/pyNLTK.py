@@ -2,8 +2,8 @@
 from __future__ import division
 import nltk
 from nltk.corpus import PlaintextCorpusReader # Corpus => 말뭉치
-nltk.download('punkt')
-nltk.download('stopwords')
+#nltk.download('punkt')
+#nltk.download('stopwords')
 
 rootOfCorpus = 'e://simpson//'
 
@@ -15,3 +15,6 @@ vocabularyUsed = set(textSimpson)
 myWord = "KILL"
 
 print textSimpson.collocations()
+
+print textSimpson.concordance(myWord)
+
