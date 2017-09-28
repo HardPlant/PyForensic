@@ -18,3 +18,8 @@ print textSimpson.collocations()
 
 print textSimpson.concordance(myWord)
 
+myWord = "intent"
+print textSimpson.similar(myWord)
+
+myWord = "victim"
+print textSimpson.similar(myWord)
