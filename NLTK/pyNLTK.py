@@ -23,3 +23,5 @@ textSimpson = nltk.Text(tokens)
 
 vocabularyUsed = set(textSimpson)
 print len(vocabularyUsed)
+
+print sorted(set(textSimpson))
