@@ -11,15 +11,20 @@ newCorpus = PlaintextCorpusReader(rootOfCorpus, '.*')
 rawText = newCorpus.raw()
 tokens = nltk.word_tokenize(rawText)
 textSimpson = nltk.Text(tokens)
-vocabularyUsed = set(textSimpson)
+# vocabularyUsed = set(textSimpson)
 myWord = "KILL"
-
-print textSimpson.collocations()
-
-print textSimpson.concordance(myWord)
+# print textSimpson.collocations()
+# print textSimpson.concordance(myWord)
 
 myWord = "intent"
-print textSimpson.similar(myWord)
+# print textSimpson.similar(myWord)
 
 myWord = "victim"
-print textSimpson.similar(myWord)
+# print textSimpson.similar(myWord)
+
+simpsonVocab = textSimpson.vocab()
+type(simpsonVocab)
+
+
+
+
