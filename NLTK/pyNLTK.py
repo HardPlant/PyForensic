@@ -23,8 +23,9 @@ myWord = "victim"
 # print textSimpson.similar(myWord)
 
 simpsonVocab = textSimpson.vocab()
-type(simpsonVocab)
+print type(simpsonVocab)
 
+print type(simpsonVocab.items())
 
 
 
