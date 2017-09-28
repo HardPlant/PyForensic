@@ -25,3 +25,10 @@ vocabularyUsed = set(textSimpson)
 print len(vocabularyUsed)
 
 print sorted(set(textSimpson))
+
+myWord = "KILL"
+print textSimpson.count(myWord)
+
+
+
+
