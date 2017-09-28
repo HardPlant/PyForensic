@@ -7,28 +7,8 @@ nltk.download('punkt')
 rootOfCorpus = 'e://simpson//'
 
 newCorpus = PlaintextCorpusReader(rootOfCorpus, '.*')
-print type(newCorpus)
-
-print newCorpus.fileids()
-print newCorpus.abspaths()
-
 rawText = newCorpus.raw()
-print len(rawText)
-
 tokens = nltk.word_tokenize(rawText)
-print len(tokens)
-print tokens[0:100]
-
 textSimpson = nltk.Text(tokens)
-
 vocabularyUsed = set(textSimpson)
-print len(vocabularyUsed)
-
-print sorted(set(textSimpson))
-
 myWord = "KILL"
-print textSimpson.count(myWord)
-
-
-
-
