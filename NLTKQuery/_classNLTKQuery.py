@@ -72,15 +72,31 @@ class classNTLKQuery:
             print "단어 입력이 잘못되었습니다."
 
     def generateConcordance(self):
-        pass
+        myWord = raw_input("일치하는 단어 입력:")
+        if myWord:
+            self.TextCorpus.concordance()
+        else:
+            print "단어 입력이 잘못되었습니다."
 
     def generateSimilarities(self):
-        pass
+        myWord = raw_input("유사도를 찾을 단어 입력:")
+        if myWord:
+            self.TextCorpus.similar(myWord)
+        else:
+            print "단어 입력이 잘못되었습니다."
 
     def printWordIndex(self):
-        pass
+        myWord = raw_input("어떤 단어를 찾을까요?")
+        if myWord:
+            wordIndex = self.TextCorpus.index(myWord)
+            print "첫 번째 :" + myWord + "오프셋: "
+            print wordIndex
+        else:
+            print "단어 입력이 잘못되었습니다."
 
     def printVocabulary(self):
-        pass
+        print "어휘 빈도 계산 중..."
+        vocabFreqList = self.TextCorpus.vocab()
+        print vocabFreqList.items()
 
 
