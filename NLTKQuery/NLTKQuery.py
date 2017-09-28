@@ -28,28 +28,38 @@ if result == "성공":
         menuSelection = _NLTKQuery.getUserSelection()
 
         if menuSelection == 1:
-            pass
+            oNLTK.printCorpusLength()
 
         elif menuSelection == 2:
-            pass
+            oNLTK.printTokensFound()
+
         elif menuSelection == 3:
-            pass
+            oNLTK.printVocabSize()
+
         elif menuSelection == 4:
-            pass
+            oNLTK.printSortedVocab()
+
         elif menuSelection == 5:
-            pass
+            oNLTK.printCollocation()
+
         elif menuSelection == 6:
-            pass
+            oNLTK.printWordIndex()
+
         elif menuSelection == 7:
-            pass
+            oNLTK.generateConcordance()
+
         elif menuSelection == 8:
-            pass
+            oNLTK.generateSimilarities()
+
         elif menuSelection == 9:
-            pass
+            oNLTK.printWordIndex()
+
         elif menuSelection == 10:
-            pass
+            oNLTK.printVocabulary()
+
         elif menuSelection == 0:
-            pass
+            print "Goodbye!"
+            print
 
         elif menuSelection == -1:
             continue
